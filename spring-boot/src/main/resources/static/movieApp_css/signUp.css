@@ -1,0 +1,153 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.initialTab {
+    background-color: black;
+    display: flow-root;
+    height: 65px;
+}
+
+.mainMenu {
+    min-height: 1200px;
+    background: linear-gradient(to top, #206398 0%, #013159 90%);
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.mid {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.img {
+    text-align: center;
+}
+
+#loginBtn{
+    cursor: pointer;
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-position: 10px 10px;
+    padding: 5px 10px 5px 10px;
+	margin: 1%;
+    margin-left: 20px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#loginBtn:hover{
+    background-color: #b0aeaf;
+    color: white;
+}
+
+.signup {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+    margin: 10px;
+}
+
+#messageTitle {
+    width: 40%;
+    font-size: 32px;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+    margin: 10px;
+	color: white;
+}
+
+#email {
+    width: 10%;
+    font-size: 18px;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px; 
+	color: white;
+	margin: 1%;
+}
+
+#username {
+    width: 10%;
+    font-size: 18px;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+	color: white;
+	margin: 0.2%;
+}
+
+#password {
+    width: 10%;
+    font-size: 18px;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+	color: white;
+	margin: 0.3%;
+}
+
+#confirm {
+    width: 10%;
+    font-size: 18px;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+	color: white;
+	margin: -1.4%;
+}
+
+#messageError {
+    position: fixed;
+    width: 100%;
+    top: 30%;
+}
+
+#message {
+	text-align: center;
+    color: red;
+    margin: 0;
+    font-size: 25px;
+}
+
+.home{
+    background-color: inherit;
+    margin-right: 5%;
+    color: rgb(208, 212, 212);
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: large;
+    margin: 15px;
+}
+
+.home:hover{
+    color: inherit;
+    background-color: rgb(208, 212, 212);
+}
+
+.first{
+    width: 15%;
+    float: left;
+    margin: 0;
+}
+
+.second{
+    width: 70%;
+    float: left;
+    margin: 0;
+}
+
+input:invalid {
+    border: 2px solid red;
+}

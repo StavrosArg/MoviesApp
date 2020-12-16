@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Online Movies - Sign Up</title>
+    <meta http-equiv="Content-Type" content="text/html;  charset=windows-1252">
+    <script src="../movieApp_js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../movieApp_css/signUp.css" type="text/css">
+    <script src="../movieApp_js/signUp.js"></script>
+    <link rel="shorcut icon" type="image/png" href="./movieApp_images/camera.png">
+    <script></script>
+</head>
+
+<body>
+
+    <section class="initialTab">
+        <section>
+            <div class="center first">
+                <button class="home" onclick="pushButtonHome()">Movies App</button>
+            </div>
+            <div class="center second">
+                <img src="./movieApp_images/klaketa.jpg" alt="movie logo" width="60" height="60" style="vertical-align: middle; margin-top: 2px;">
+                <font type="text" id="messageTitle">Join our community!</font>
+                <img src="./movieApp_images/tv-and-film-header-overlay.jpg" alt="movie logo2" width="130px" height="60px" style="vertical-align: middle; margin-top: 2px;">
+            </div>
+        </section>
+    </section>
+
+    <section class="mainMenu">
+    		<div id="messageError">
+				<p id="message"></p>
+			</div>	
+			<form class="mid" id="signUpForm">
+				<div class="center">
+					<font type="text" id="email">Email:</font> 
+                    <input class="signup" type="text" placeholder="e.g. JamesBond@MI6.en" id="emailField" name="email" onkeydown="checkInput(event)" onblur="checkInputValidity()">
+				</div>
+				<div class="center">
+					<font type="text" id="username">Username:</font> 
+					<input class="signup" type="text" placeholder="e.g. JamesBond" id="usernameField" name="username" onkeydown="checkUsernameInput(event)" onblur="checkInputValidity()">
+				</div>
+				<div class="center">
+					<font type="text" id="password">Password:</font>
+					<input class="signup" type="password" placeholder="e.g. 1234" id="passwordField" name="password" onkeydown="checkInput(event)" onblur="checkInputValidity()">
+				</div>
+				<div class="center">
+					<font type="text" id="confirm">Confirm Password:</font>
+					<input class="signup" type="password" placeholder="e.g. 1234" id="confirmPasswordField" onkeydown="checkInput(event)" onblur="checkInputValidity()">
+				</div>
+                <div class="center">
+                    <button id="loginBtn" class="btnSignup" type="submit">Sign Up</button>   
+				</div>
+			</form>
+    </section>
+	
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Online Movies</title>
+    <meta http-equiv="Content-Type" content="text/html;  charset=windows-1252">
+    <script src="../movieApp_js/jquery-3.4.1.min.js"></script>
+    <script src="../movieApp_js/movieApp_After_Log_In.js"></script>
+    <link rel="shorcut icon" type="image/png" href="./movieApp_images/camera.png">
+    <link rel="stylesheet" href="../movieApp_css/movieApp.css" type="text/css">
+    <script></script>
+</head>
+
+<body>
+
+    <section class="initialTab">
+    	<section>
+            <div class="center first">
+                <button class="home" onclick="pushButtonHome()">Movies App</button>
+            </div>
+            <div class="center second">
+                <img src="./movieApp_images/klaketa.jpg" alt="movie logo" width="60" height="60" style="vertical-align: middle;">
+                <input type="text" placeholder="Search Movie.." id="search" onkeydown="return onlyAlphabets(event);">
+                <img src="./movieApp_images/tv-and-film-header-overlay.jpg" alt="movie logo2" width="130px" height="60px" style="vertical-align: middle;">
+            </div>
+            <div class="right third">
+                <button class="options" onclick="pushButtonFavorites()">My favorites</button>
+                <button class="options" onclick="pushButtonLogOut()">Log Out</button>
+            </div>
+        </section>
+    </section>
+
+    <section class="mainMenu">
+        <section class="center">
+            <div class="movies">
+                <div class="movieBox" id="movieBox1">
+                    <img src="" alt="First Movie" class="img" display="block" width="266px" height="388px" id="movie1">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox2">
+                    <img src="" alt="Second Movie" class="img" display="block" width="266px" height="388px" id="movie2">
+                    <p class="title"></p>
+                    <p class="uear"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox3">
+                    <img src="" alt="Third Movie" class="img" display="block" width="266px" height="388px" id="movie3">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox4">
+                    <img src="" alt="Fourth Movie" class="img" display="block" width="266px" height="388px" id="movie4">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox5">
+                    <img src="" alt="Fifth Movie" class="img" display="block" width="266px" height="388px" id="movie5">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+            
+                <div class="movieBox" id="movieBox6">
+                    <img src="" alt="Sixth Movie" class="img" display="block" width="266px" height="388px" id="movie6">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox7">
+                    <img src="" alt="Seventh Movie" class="img" display="block" width="266px" height="388px" id="movie7">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox8">
+                    <img src="" alt="Eighth Movie" class="img" display="block" width="266px" height="388px" id="movie8">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox9">
+                    <img src="" alt="Ninth Movie" class="img" display="block" width="266px" height="388px" id="movie9">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+                <div class="movieBox" id="movieBox10">
+                    <img src="" alt="Tenth Movie" class="img" display="block" width="266px" height="388px" id="movie10">
+                    <p class="title"></p>
+                    <p class="year"></p>
+                    <p class="genre"></p>
+                    <p class="duration"></p>
+                    <p class="description"></p>
+                    <button class="more" onclick="pushButtonMore()">More..</button>
+                    <button class="notFavorite" onclick="addToFavorites()"><img src="./movieApp_images/notFavorite.svg.png" alt="notFavorite" display="block" width="20px" height="20px"></button>
+                    <button class="favorite" onclick="removeFromFavorites()"><img src="./movieApp_images/favorite.svg.png" alt="favorite" display="block" width="20px" height="20px"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="paging">
+            <div>
+                <button id="buttonFirst" class="round" onclick="pushButtonFirst()">
+                    &#8249;&#8249;
+                </button>
+                <button id="buttonPrevious" class="round" onclick="pushButtonPrevious()">
+                    &#8249;
+                </button>
+                <p id="pagingDetails"></p>
+                <button id="buttonNext" class="round" onclick="pushButtonNext()">
+                    &#8250;
+                </button>
+                <button id="buttonLast" class="round" onclick="pushButtonLast()">
+                    &#8250;&#8250;
+                </button>
+            </div>
+        </section>
+
+        <section class="movieDetails">
+            <div style="margin-top: 50px;">
+                <div class="moviePosterDetail" id="movieBox">
+                    <img src="" alt="Details" class="detailedImg" id="movie">
+                </div>
+                <div class="details">
+                    <p class="detailedTitle"></p>
+                    <p class="detailedRating"></p>
+                    <p class="detailedYear"></p>
+                    <p class="detailedGenre"></p>
+                    <p class="detailedDuration"></p>
+                    <p class="detailedDescription"></p>
+                    <p class="detailedWriter"></p>
+                    <p class="detailedDirector"></p>
+                    <p class="detailedActors"></p>
+                    <p class="detailedAwards"></p>
+                </div>
+                <div class="returnButton">
+                    <button id="returnBtn" onclick="pushButtonReturn()">Return to movies</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</body>
+</html>

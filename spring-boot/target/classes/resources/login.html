@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Online Movies - Login</title>
+    <meta http-equiv="Content-Type" content="text/html;  charset=windows-1252">
+    <script src="../movieApp_js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../movieApp_css/login.css" type="text/css">
+    <script src="../movieApp_js/login.js"></script>
+    <link rel="shorcut icon" type="image/png" href="./movieApp_images/camera.png">
+    <script></script>
+</head>
+
+<body>
+
+    <section class="initialTab">
+        <section>
+            <div class="center first">
+                <button class="home" onclick="pushButtonHome()">Movies App</button>
+            </div>
+            <div class="center second">
+                <img src="./movieApp_images/klaketa.jpg" alt="movie logo" width="60" height="60" style="vertical-align: middle; margin-top: 2px;">
+                <font type="text" id="titleMessage">Welcome back!</font>
+                <img src="./movieApp_images/tv-and-film-header-overlay.jpg" alt="movie logo2" width="130px" height="60px" style="vertical-align: middle; margin-top: 2px;">
+            </div>
+        </section>
+    </section>
+
+    <section class="mainMenu">	
+    		<div id="messageError">
+				<p id="message"></p>
+			</div>
+			<form class="mid" id="loginForm">
+				<div class="center">
+					<font class="loginText" type="text" id="username">Username:</font> 
+					<input class="loginField" type="text" placeholder="e.g. JamesBond" id="usernametext" name="username" onkeydown="return checkInput(event);">
+				</div>
+				<div class="center">
+					<font class="loginText" type="text" id="pass">Password:</font>
+					<input class="loginField" type="password" placeholder="e.g. 1234" id="passwordtext" name="password" onkeydown="return checkInput(event);">
+				</div>
+                <div class="center">
+                    <button id="loginBtn" class="login">Login</button>
+				</div>
+			</form>
+    </section>
+	
+</body>
+</html>

@@ -1,0 +1,331 @@
+body {
+    background-color: black;
+    margin: 0px;
+    /* background: linear-gradient(to top, #206398 0%, #013159 90%); */
+}
+
+.initialTab {
+    background-color: black;
+    display: flow-root;
+    height: 65px;
+}
+
+.mainMenu {
+    min-height: 1200px;
+    background: linear-gradient(to top, #206398 0%, #013159 90%);
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.first{
+    width: 15%;
+    float: left;
+    margin: 0;
+}
+
+.second{
+    width: 70%;
+    float: left;
+    margin: 0;
+}
+
+.third{
+    width: 15%;
+    float: right;
+    margin: 0;
+}
+
+.right {
+    text-align: right;
+    margin: auto;
+}
+
+.movies {
+    overflow: hidden;
+    margin-left: 10px;
+    /* border: 5px solid green; */
+    vertical-align: middle;
+}
+
+.movieDetails {
+    overflow: hidden;
+    margin-left: 200px;
+}
+
+.boxed {
+    text-align: center;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+.img {
+    text-align: center;
+}
+
+div.boxed.center {
+    border: hidden;
+}
+
+#search {
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 20px;
+    margin: 8px 10px 10px 10px;
+}
+
+.movieBox {
+    padding: 5px;
+    width: 266px;
+    height: 550px;
+    border: solid 1px #b0aeaf;
+    margin: 15px 5px 15px 5px;
+    vertical-align: top;
+    display: inline-block;
+    color: grey;
+    background-color: floralwhite;
+    -webkit-box-shadow: 10px 10px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 11px -1px rgba(0,0,0,0.75);
+}
+
+.moviePosterDetail {
+    float: left;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-align: left;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.genre {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-align: left;
+}
+
+.duration {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-align: left;
+}
+
+.year {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-align: left;
+}
+
+.description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-align: left;
+    min-height: 60px;
+}
+
+.more {
+    float: right;
+    border: hidden;
+    background-color: inherit;
+    margin-right: 2px;
+    color: darkslategrey;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more:hover{
+    color: #013159
+}
+
+.details {
+    float: left;
+    width: 600px;
+    margin-left: 10px;
+    color: #d5d3d3;
+}
+
+.detailedTitle {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    color: white;
+}
+
+.detailedGenre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    float: left;
+}
+
+.detailedDuration {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.detailedYear {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    float: left;
+}
+
+.detailedActors {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.detailedWriter {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.detailedDirector {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.detailedDescription {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 3px;
+}
+
+.detailedAwards {
+    margin: 15px 0 5px 3px;
+    color: bisque;
+    font-weight: bold;
+}
+
+.detailedRating {
+    margin: 5px 0 5px 3px;
+    color: bisque;
+    font-weight: bold;
+}
+
+.round {
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 10px 0 10px 0;
+}
+
+#pagingDetails {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+}
+
+.paging {
+    text-align: right;
+    margin-right: 65px;
+}
+
+.detailedImg{
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#returnBtn{
+    cursor: pointer;
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-position: 10px 10px;
+    padding: 5px 10px 5px 10px;
+	margin: 1%;
+    margin-left: 20px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#returnBtn:hover{
+    background-color: #b0aeaf;
+    color: white;
+}
+
+.options{
+    
+    /* //float: right; */
+    text-align: right;
+    border: hidden;
+    background-color: inherit;
+    margin: 5px;
+    color: rgb(208, 212, 212);
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.options:hover{
+    color: #2a96ee
+}
+
+.home{
+    background-color: inherit;
+    margin-right: 5%;
+    color: rgb(208, 212, 212);
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: large;
+    margin: 15px;
+}
+
+.home:hover{
+    color: inherit;
+    background-color: rgb(208, 212, 212);
+}
+
+.favorite{
+    border: hidden;
+    background-color: inherit;
+    cursor: pointer;
+    float: left;
+}
+
+.notFavorite{
+    border: hidden;
+    background-color: inherit;
+    cursor: pointer;
+    float: left;
+}
+
+.sectionTitle{
+    text-align: left;  
+}
+
+.favoriteTitle{
+    font-size: 30px;
+    margin: 0 0 0 5%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 15, 15);  
+}
